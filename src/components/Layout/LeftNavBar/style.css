@@ -1,0 +1,46 @@
+.LeftNavBar{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 14.25rem;
+    flex-shrink: 0;
+    background: var(--color-gray-white, #FFF);
+    /* Right side shadow */
+    box-shadow: 2px 0px 40px -15px rgba(0, 0, 0, 0.25);
+    z-index: 99;
+    position: fixed;
+}
+.logo{
+    width: 8.75rem;
+    height: 2.31925rem;
+    position: relative;
+    padding-top:1.44rem;
+    padding-left: 1.5rem;
+}
+.MenuItems
+{
+    padding: 0px 12px;
+    padding-top: 4.74rem;
+    height: 100%;
+    position: relative;
+}
+.MenuItem:hover {
+    background-color: #F1F1F1;  /* Or any color/effect you prefer */
+    cursor: pointer;  /* Change the mouse cursor to indicate it's clickable */
+}
+.logout{
+    position:relative;
+}
+.MenuItems .active .MenuItem{
+    background-color: #F1F1F1;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 0.75rem;
+}
+.logout .MenuItem {
+    margin-bottom: 56px;
+}

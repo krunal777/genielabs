@@ -1,0 +1,86 @@
+.header h1{
+    color:#343434;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 40px;
+    margin-bottom: 80px;
+}
+.sub-header h3{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #343434;
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+.search-header #search-box{
+    border: 0px;
+    border-bottom:1px solid #AFAFAF;
+    width: 100%;
+    max-width: 486px;
+    padding: 4px;
+    color: #AFAFAF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
+    background-image: url(../../../public/images/search.svg);
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    font-family: "Roboto";
+    padding-right: 25px;
+}
+.search-header input::-webkit-input-placeholder{
+    color: #AFAFAF;
+}
+.wrap_charchter{
+    margin-top: 68px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrap_charchter .char_box{
+    max-width: 240px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0px 12px;
+}
+.wrap_charchter .char_box .char_img{
+    max-height: 212px;
+}
+.wrap_charchter .char_box .char_name{
+    background-color: #D3D3D3;
+    padding: 16px 8px 16px 24px;
+    color: #343434;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.wrap_charchter .char_box .char_name h3{
+    margin: 0;
+    text-align: left;
+    font-weight: 500;
+}
+.start_btn_container{
+    background-color: #F1F1F1;
+    padding: 40px 0px;
+    margin-top: 30px;
+}
+.btn_black{
+    background-color: #7C7C7C;
+    border-radius: 5px;
+    background-color: #7C7C7C;
+    border: 0px;
+    line-height: 47px;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0px 30px;
+
+}
+

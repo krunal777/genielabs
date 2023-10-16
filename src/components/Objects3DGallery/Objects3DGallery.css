@@ -1,0 +1,44 @@
+/* Main gallery container */
+.gallery-container {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    justify-content: center;
+    align-items: left;
+    height: 300px;
+}
+
+/* Each item in the gallery */
+.gallery-item {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Highlight effect when an item is selected */
+.gallery-item.selected {
+    box-shadow: inset 0 0 10px #000000;
+}
+
+/* Overlay shown when hovering on each item */
+.gallery-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover effect for the overlay */
+.gallery-item:hover .gallery-item-overlay {
+    opacity: 1;
+}

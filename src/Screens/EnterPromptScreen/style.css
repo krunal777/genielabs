@@ -1,0 +1,111 @@
+:root {
+  --primary-purple: #6A1B9A;
+  --light-purple: #BA68C8;
+  --color-gray-50: #FFFFFF;
+  --color-shadow: rgba(106, 27, 154, 0.3);
+}
+
+.EnterPromptScreen {
+  background: var(--light-purple);
+  text-align: center;
+  padding: 2rem 0;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px var(--color-shadow);
+  max-width: 90%;
+  margin: 2% auto;
+}
+
+.header, .sub-header {
+  margin: 2rem 0;
+  color: var(--primary-purple);
+}
+
+h1, h2 {
+  /* text-transform: uppercase; */
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.text-field {
+  border: none;
+  border-bottom: 2px solid var(--primary-purple);
+}
+
+.start-button {
+  background-color: var(--primary-purple);
+  color: var(--color-gray-50);
+}
+
+.start-button:hover {
+  background-color: var(--light-purple);
+  color: var(--primary-purple);
+  transition: background-color 0.3s;
+}
+
+.toggle-button-group .Mui-selected {
+  background-color: var(--primary-purple) !important;
+  color: var(--color-gray-50) !important;
+}
+
+.loader-container {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.loader {
+  border: 8px solid var(--color-gray-50);
+  border-top: 8px solid var(--primary-purple);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  position: absolute;  
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%);  
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-purple); /* or any desired color */
+  font-size: 18px; 
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.parts-container {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-50%);
+  z-index: 1; /* to ensure it doesn't interfere with the loader */
+  padding: 10px 20px; /* padding for separation from edge */
+}
+
+.part-box {
+  background-color: var(--color-gray-50);
+  color: var(--primary-purple);
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.part-box.selected {
+  border: 2px solid var(--primary-purple);
+}

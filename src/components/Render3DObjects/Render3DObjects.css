@@ -1,0 +1,40 @@
+.canvas-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 400px;
+}
+
+.arrow-button {
+    position: relative;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+    transform: scale(3, 5);
+    animation: blink 1s linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  50% {
+    opacity: .8;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+.arrow-button:hover{
+    transform: scale(3, 4);
+}
+
+.left-arrow {
+    margin-right:-50px
+}
+
+.right-arrow {
+    margin-left:-50px
+}

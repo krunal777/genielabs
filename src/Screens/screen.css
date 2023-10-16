@@ -1,0 +1,9 @@
+.screen{
+    background: var(--color-gray-50, #FFFFFF);
+    text-align: center;
+    width:100%;
+    min-height:70vh;
+    /* max-height:70vh; */
+    /* padding:10px; */
+    box-sizing: border-box;
+}
