@@ -37,7 +37,7 @@ function Layout({children}: LayoutProps) {
              <LeftNavBar/>
              <div className='Box'>
              <TopNavBar/>
-              <div style={{marginTop:24}}>
+              <div style={{marginTop:80}}>
                 {/* <Tabs>
                     <Tab title="tab 1"><div>Hello CodeSandbox</div></Tab>
                     <Tab title="tab 2"><div>Start editing to see some magic happen!</div></Tab>

@@ -16,3 +16,26 @@ body{
     align-items: center;
     z-index: 1000;  /* Ensure it appears on top */
 }
+.Tabs{
+    margin-top: -50px;
+}
+.Tabs .nav{
+    margin: 0;
+}
+.Tabs .nav li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 16px 27px;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+.Tabs .nav li.active{
+    background-color: #FFF;
+}
+.wrap_charchter .char_box{
+    border: 2px solid transparent;
+}
+.wrap_charchter .char_box.active{
+    border: 2px solid #9a54ff;   
+}
+

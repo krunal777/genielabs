@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+
 // Create Axios instance
 const api = axios.create({
     baseURL: "https://tq055pyk5f.execute-api.us-east-2.amazonaws.com/prod"

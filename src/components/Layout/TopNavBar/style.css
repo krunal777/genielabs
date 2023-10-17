@@ -8,6 +8,9 @@
     background: var(--color-gray-white, #FFF);
     /* Right side shadow */
     box-shadow: 32px 0px 40px -15px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 9;
+    left: 0;
 }
 
 h1{
@@ -22,3 +25,4 @@ margin-right: 4px;
     font-weight: 300;
     padding-left: 8px;
 }
+
