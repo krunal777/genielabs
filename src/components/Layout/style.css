@@ -1,27 +1,30 @@
-.content{
-    display:flex;
+.content {
+    display: flex;
     flex-direction: row;
     flex-shrink: 0;
 }
-.Layout{
-display:flex;
-flex-direction: row;
-height: 100vw;
-height: 100vh;
-background-color: #f1f1f1;
+
+.Layout {
+    display: flex;
+    flex-direction: row;
+    /* height: 100vw;*/
+    min-height: 100vh; 
+    background-color: #f1f1f1;
 }
-.Box{
+
+.Box {
     width: 100%;
     padding-left: 14.25rem;
 }
 
-.new_avtar{
+.new_avtar {
     margin-bottom: 20px;
     text-align: right;
     padding-right: 48px;
     padding-top: 20px;
 }
-.new_avtar Button{
+
+.new_avtar Button {
     color: #343434;
     font-size: 16px;
     font-style: normal;
@@ -31,11 +34,12 @@ background-color: #f1f1f1;
     border-color: #AFAFAF;
     text-transform: capitalize;
 }
-.new_avtar Button:hover{
+
+.new_avtar Button:hover {
     color: var(--primary-purple);
     border-color: var(--primary-purple);
 }
-.new_avtar Button svg{
+
+.new_avtar Button svg {
     margin-right: 8px;
 }
-

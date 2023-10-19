@@ -33,6 +33,7 @@
 }
 .MenuItems .active .MenuItem{
     background-color: #F1F1F1;
+    font-weight: 600;
 }
 .logout{
     position: absolute;

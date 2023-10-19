@@ -24,14 +24,16 @@ const Users = [
 ];
 
 
-const ChooseCharecter = () => {
+const ChooseCharecter = ({nextStep}) => {
   const [query, setQuery] = useState("");
-  const [isActive, setIsActive] = useState(false);
 
   const handleClick = (event) => {
-    document.querySelectorAll('.char_box').classList.remove('active');
+    const items = document.querySelectorAll('.char_box');
+    const arrItems = Array.from(items)
+    arrItems.forEach(item => item.classList.remove('active'))
     event.currentTarget.classList.add('active');
-
+    console.log(event.currentTarget.classList.contains('active')) 
+    event.currentTarget.classList.contains('active') ? document.querySelector('.btn_black').classList.add('active') : ""
   }
 
   return (
@@ -65,7 +67,7 @@ const ChooseCharecter = () => {
         ))}
       </div>
       <div className="start_btn_container">
-        <button className="btn_black">
+        <button className="btn_black" onClick={nextStep}>
           I picked my character, Let’s continue
         </button>
       </div>

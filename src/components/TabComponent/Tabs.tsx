@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import TabNavItem from "../TabComponent/TabNavItem";
 import TabContent from "../TabComponent/TabContent";
-import ChooseCharecter from "../ChooseCharecter/ChooseCharecter";
+import MultiStepForm from "../MultiStepForm/MultiStepForm";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -32,7 +32,8 @@ const Tabs = () => {
 
       <div className="outlet">
         <TabContent id="tab1" activeTab={activeTab}>
-          <ChooseCharecter />
+          {/* <ChooseCharecter /> */}
+          <MultiStepForm />
         </TabContent>
         <TabContent id="tab2" activeTab={activeTab}>
           <div className="screen">
