@@ -16,6 +16,7 @@ import { Button } from '@mui/material';
 
 import Tabs from "./tabs/Tabs";
 import Tab from "./tabs/Tab";
+import OrganizationScreen from '../../Screens/OrganizationScreen/OrganizationScreen';
 
 interface LayoutProps {
   children?: ReactNode;
@@ -50,6 +51,7 @@ function Layout({children}: LayoutProps) {
                   <Route path="/Select3DObjectScreen" element={<Select3DObjectScreen/>}/>
                   <Route path="/enter_prompt" element={<EnterPromptScreen/>}/>
                   <Route path="/gallery" element={<GalleryScreen/>}/>
+                  <Route path="/organization" element={<OrganizationScreen/>}/>
                   <Route path="/moderation" element={<ModerationScreen/>}/>
                 </Routes>
                 </div>

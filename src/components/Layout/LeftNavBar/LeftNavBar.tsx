@@ -36,7 +36,10 @@ const LeftNavBar: React.FC = () => {
                     <MenuItem value="Gallery" logoClass='fas fa-images' menuIcon="/images/icon3.svg"/>
                 </div>
                 <div className='border'></div>
-                <MenuItem value="My Organization" logoClass='fas fa-building' isDisabled={false} menuIcon="/images/icon4.svg"/>
+                {/* <MenuItem value="My Organization" logoClass='fas fa-building' isDisabled={false} menuIcon="/images/icon4.svg"/> */}
+                {/* <div onClick={() => {navigate("/organization1"); }} className={splitLocation[1] === "organization" ? "active" : ""}>
+                    <MenuItem value="My Organization" logoClass='fas fa-images' menuIcon="/images/icon4.svg"/>
+                </div> */}
                 <MenuItem value="Support" logoClass='fas fa-headset' isDisabled={false} menuIcon="/images/icon5.svg"/>
                 <div className="logout" onClick={() => setOpenDialog(true)}>
                     <MenuItem value="Logout" logoClass='fas fa-sign-out-alt' menuIcon="/images/icon6.svg"/>

@@ -9,7 +9,7 @@
     /* Right side shadow */
     box-shadow: 32px 0px 40px -15px rgba(0, 0, 0, 0.25);
     position: fixed;
-    z-index: 9;
+    z-index: 999;
     left: 0;
 }
 

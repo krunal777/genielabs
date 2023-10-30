@@ -29,7 +29,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #ffffff;
     color: white;
     display: flex;
     align-items: center;
@@ -42,3 +42,7 @@
 .gallery-item:hover .gallery-item-overlay {
     opacity: 1;
 }
+.gallery-item  .gallery-item-overlay .more_info{
+    
+}
+
